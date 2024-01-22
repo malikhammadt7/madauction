@@ -1,0 +1,20 @@
+<resources>
+	<string name="app_name">MadAuctionApp</string>
+	<string name="title_activity_login">LoginActivity</string>
+	<string name="prompt_email">Email</string>
+	<string name="prompt_phone">Phone</string>
+	<string name="prompt_password">Password</string>
+	<string name="action_sign_in">Log in</string>
+	<string name="action_sign_up">Signup/register</string>
+	<string name="action_sign_in_short">Sign in</string>
+	<string name="welcome">"Welcome !"</string>
+	<string name="invalid_username">Not a valid username</string>
+	<string name="invalid_password">Password must be >5 characters</string>
+	<string name="login_failed">"Login failed"</string>
+	<string name="auction_item_image">Auction Item Image</string>
+	<string name="hint_item_name">Enter Item Name</string>
+	<string name="hint_item_description">Enter Item Description</string>
+	<string name="hint_starting_bid">Enter Starting Bid</string>
+	<string name="action_upload_image">Upload Image</string>
+	<string name="action_post_item">Post Item</string>
+</resources>

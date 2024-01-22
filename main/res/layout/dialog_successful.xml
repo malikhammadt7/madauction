@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="16dp">
+
+	<TextView
+		android:id="@+id/textViewSuccessMessage"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Bid Successfully Placed!"
+		android:layout_centerHorizontal="true"
+		android:gravity="center_horizontal"
+		android:textSize="18sp"
+		android:textStyle="bold" />
+
+	<Button
+		android:id="@+id/buttonCloseSuccessDialog"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textViewSuccessMessage"
+		android:layout_marginTop="16dp"
+		android:text="Close" />
+
+</RelativeLayout>

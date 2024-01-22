@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="16dp">
+
+	<TextView
+		android:id="@+id/textViewItemName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Item Name"
+		android:textSize="18sp"
+		android:textStyle="bold" />
+
+	<ImageButton
+		android:id="@+id/btnCancel"
+		android:layout_width="24dp"
+		android:layout_height="24dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:padding="8dp"
+		android:src="@drawable/ic_close_48"
+		android:background="@color/white"
+		app:tint="@color/black" />
+
+	<TextView
+		android:id="@+id/textViewCurrentBid"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textViewItemName"
+		android:layout_marginTop="8dp"
+		android:text="Current Bid: $100"
+		android:textSize="16sp" />
+
+	<EditText
+		android:id="@+id/editTextBidAmount"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textViewCurrentBid"
+		android:layout_marginTop="16dp"
+		android:hint="Enter Bid Amount"
+		android:inputType="numberDecimal" />
+
+	<Button
+		android:id="@+id/btnPlaceBid"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/editTextBidAmount"
+		android:layout_marginTop="16dp"
+		android:text="Place Bid" />
+
+</RelativeLayout>

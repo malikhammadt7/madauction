@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.AddPostActivity">
+
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/layout_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:layout_below="@id/toolbar">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+	<TextView
+		android:id="@+id/txt1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="Add Auction Item"
+		android:layout_alignParentTop="true"
+		android:gravity="center"
+		android:textStyle="bold|italic"
+		android:textSize="18dp"
+		android:layout_centerHorizontal="true"/>
+
+	<ImageView
+		android:id="@+id/imgAuctionItem"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/txt1"
+		android:layout_marginStart="@dimen/activity_horizontal_margin"
+		android:layout_marginTop="@dimen/activity_horizontal_margin"
+		android:layout_marginEnd="@dimen/activity_horizontal_margin"
+		android:layout_marginBottom="@dimen/activity_horizontal_margin"
+		android:contentDescription="@string/auction_item_image"
+		android:scaleType="centerCrop"
+		android:src="@drawable/ic_launcher_background" />
+	<Button
+		android:id="@+id/btnUploadImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/imgAuctionItem"
+		android:layout_marginTop="6dp"
+		android:text="@string/action_upload_image"
+		android:layout_centerHorizontal="true" />
+
+	<EditText
+		android:id="@+id/edtItemName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnUploadImage"
+		android:layout_marginTop="16dp"
+		android:hint="@string/hint_item_name"
+		android:inputType="text"
+		android:padding="8dp" />
+
+	<EditText
+		android:id="@+id/edtDescription"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edtItemName"
+		android:layout_marginTop="8dp"
+		android:gravity="start"
+		android:hint="@string/hint_item_description"
+		android:inputType="textMultiLine"
+		android:minLines="3"
+		android:padding="8dp" />
+
+	<EditText
+		android:id="@+id/edtStartingBid"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edtDescription"
+		android:layout_marginTop="8dp"
+		android:hint="@string/hint_starting_bid"
+		android:inputType="numberDecimal"
+		android:padding="8dp" />
+
+	<Button
+		android:id="@+id/btnPostItem"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edtStartingBid"
+		android:layout_marginTop="16dp"
+		android:text="@string/action_post_item"
+		android:layout_centerHorizontal="true" />
+		</RelativeLayout>
+
+	</ScrollView>
+
+</RelativeLayout>
